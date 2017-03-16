@@ -1,0 +1,11 @@
+{% for type in types.all %}
+extension {{ type.name }} {
+static var methodList: String {
+        return ""
+{% for method in type.methods %}
++ " {{ method.shortName }} "
+{% endfor %}
+    }
+}
+
+{% endfor %}

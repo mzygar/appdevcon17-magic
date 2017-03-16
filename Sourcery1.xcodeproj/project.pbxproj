@@ -15,6 +15,8 @@
 		6E19E0DA1E7A8676008AB5A4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0D91E7A8676008AB5A4 /* Enums.swift */; };
 		6E19E0ED1E7A89F6008AB5A4 /* Enumcase.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */; };
 		6E19E0EE1E7A89F6008AB5A4 /* Enumcase.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */; };
+		6E19E0F01E7A8CE1008AB5A4 /* AllTypes.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0EF1E7A8CE1008AB5A4 /* AllTypes.stencil */; };
+		6E19E0F21E7A8D9D008AB5A4 /* AllTypes.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0F11E7A8D9D008AB5A4 /* AllTypes.generated.swift */; };
 		B5709B3087C17EE0F3A6DEFD /* libPods-Sourcery1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		6E19E0D91E7A8676008AB5A4 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumcase.generated.swift; sourceTree = "<group>"; };
 		6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Enumcase.stencil; sourceTree = "<group>"; };
+		6E19E0EF1E7A8CE1008AB5A4 /* AllTypes.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllTypes.stencil; sourceTree = "<group>"; };
+		6E19E0F11E7A8D9D008AB5A4 /* AllTypes.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTypes.generated.swift; sourceTree = "<group>"; };
 		EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sourcery1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 		6E19E0E91E7A89F6008AB5A4 /* CodeGenerated */ = {
 			isa = PBXGroup;
 			children = (
+				6E19E0F11E7A8D9D008AB5A4 /* AllTypes.generated.swift */,
 				6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */,
 			);
 			path = CodeGenerated;
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */,
+				6E19E0EF1E7A8CE1008AB5A4 /* AllTypes.stencil */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 				6E19E0D11E7A8385008AB5A4 /* LaunchScreen.storyboard in Resources */,
 				6E19E0EE1E7A89F6008AB5A4 /* Enumcase.stencil in Resources */,
 				6E19E0CE1E7A8385008AB5A4 /* Assets.xcassets in Resources */,
+				6E19E0F01E7A8CE1008AB5A4 /* AllTypes.stencil in Resources */,
 				6E19E0CC1E7A8385008AB5A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 				6E19E0ED1E7A89F6008AB5A4 /* Enumcase.generated.swift in Sources */,
 				6E19E0DA1E7A8676008AB5A4 /* Enums.swift in Sources */,
 				6E19E0C71E7A8385008AB5A4 /* AppDelegate.swift in Sources */,
+				6E19E0F21E7A8D9D008AB5A4 /* AllTypes.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

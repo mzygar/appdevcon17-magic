@@ -20,9 +20,9 @@ enum Animals {
 
 
 enum Sweets {
-    case Icecream, Cake, Chocolate
+    case Icecream, Cake, Chocolate, Gum
 }
 
 enum Devices {
-    case Phone, Tablet, Laptop
+    case Phone, Tablet, Laptop, Kindle
 }
