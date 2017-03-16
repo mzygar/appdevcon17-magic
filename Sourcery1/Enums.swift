@@ -26,3 +26,8 @@ enum Sweets {
 enum Devices {
     case Phone, Tablet, Laptop, Kindle
 }
+
+enum Barcode {
+    case simpleBarcode(first:Int, second:Int, third:Int, fourth:Int)
+    case qrCode(value:String)
+}

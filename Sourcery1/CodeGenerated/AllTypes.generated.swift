@@ -19,6 +19,12 @@ static var methodList: String {
     }
 }
 
+extension Barcode {
+static var methodList: String {
+        return ""
+    }
+}
+
 extension Devices {
 static var methodList: String {
         return ""
