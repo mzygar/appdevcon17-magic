@@ -12,9 +12,15 @@
 		6E19E0CC1E7A8385008AB5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0CA1E7A8385008AB5A4 /* Main.storyboard */; };
 		6E19E0CE1E7A8385008AB5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0CD1E7A8385008AB5A4 /* Assets.xcassets */; };
 		6E19E0D11E7A8385008AB5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0CF1E7A8385008AB5A4 /* LaunchScreen.storyboard */; };
+		6E19E0DA1E7A8676008AB5A4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0D91E7A8676008AB5A4 /* Enums.swift */; };
+		6E19E0ED1E7A89F6008AB5A4 /* Enumcase.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */; };
+		6E19E0EE1E7A89F6008AB5A4 /* Enumcase.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */; };
+		B5709B3087C17EE0F3A6DEFD /* libPods-Sourcery1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006CC951308D1A0AC4F988AD /* Pods-Sourcery1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sourcery1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sourcery1/Pods-Sourcery1.release.xcconfig"; sourceTree = "<group>"; };
+		244A56E8DE77E3DB4CE8C552 /* Pods-Sourcery1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sourcery1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sourcery1/Pods-Sourcery1.debug.xcconfig"; sourceTree = "<group>"; };
 		6E19E0C31E7A8385008AB5A4 /* Sourcery1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sourcery1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E19E0C61E7A8385008AB5A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E19E0C81E7A8385008AB5A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		6E19E0CD1E7A8385008AB5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E19E0D01E7A8385008AB5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E19E0D21E7A8385008AB5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E19E0D91E7A8676008AB5A4 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumcase.generated.swift; sourceTree = "<group>"; };
+		6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Enumcase.stencil; sourceTree = "<group>"; };
+		EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sourcery1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5709B3087C17EE0F3A6DEFD /* libPods-Sourcery1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3309436821E67EF064E35794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E19E0BA1E7A8384008AB5A4 = {
 			isa = PBXGroup;
 			children = (
 				6E19E0C51E7A8385008AB5A4 /* Sourcery1 */,
 				6E19E0C41E7A8385008AB5A4 /* Products */,
+				7EBDF91AF6EC68877DBD4D61 /* Pods */,
+				3309436821E67EF064E35794 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,42 @@
 		6E19E0C51E7A8385008AB5A4 /* Sourcery1 */ = {
 			isa = PBXGroup;
 			children = (
+				6E19E0E91E7A89F6008AB5A4 /* CodeGenerated */,
+				6E19E0EB1E7A89F6008AB5A4 /* Templates */,
 				6E19E0C61E7A8385008AB5A4 /* AppDelegate.swift */,
 				6E19E0C81E7A8385008AB5A4 /* ViewController.swift */,
 				6E19E0CA1E7A8385008AB5A4 /* Main.storyboard */,
 				6E19E0CD1E7A8385008AB5A4 /* Assets.xcassets */,
 				6E19E0CF1E7A8385008AB5A4 /* LaunchScreen.storyboard */,
 				6E19E0D21E7A8385008AB5A4 /* Info.plist */,
+				6E19E0D91E7A8676008AB5A4 /* Enums.swift */,
 			);
 			path = Sourcery1;
+			sourceTree = "<group>";
+		};
+		6E19E0E91E7A89F6008AB5A4 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				6E19E0EA1E7A89F6008AB5A4 /* Enumcase.generated.swift */,
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		6E19E0EB1E7A89F6008AB5A4 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				6E19E0EC1E7A89F6008AB5A4 /* Enumcase.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		7EBDF91AF6EC68877DBD4D61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244A56E8DE77E3DB4CE8C552 /* Pods-Sourcery1.debug.xcconfig */,
+				006CC951308D1A0AC4F988AD /* Pods-Sourcery1.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E19E0D51E7A8385008AB5A4 /* Build configuration list for PBXNativeTarget "Sourcery1" */;
 			buildPhases = (
+				F60EDA78A4B1903D8919D643 /* [CP] Check Pods Manifest.lock */,
+				6E19E0D81E7A849B008AB5A4 /* Sourcery */,
 				6E19E0BF1E7A8385008AB5A4 /* Sources */,
 				6E19E0C01E7A8385008AB5A4 /* Frameworks */,
 				6E19E0C11E7A8385008AB5A4 /* Resources */,
+				023A7509828B5276305A134F /* [CP] Embed Pods Frameworks */,
+				833E7826B92153776DCFF8D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E19E0D11E7A8385008AB5A4 /* LaunchScreen.storyboard in Resources */,
+				6E19E0EE1E7A89F6008AB5A4 /* Enumcase.stencil in Resources */,
 				6E19E0CE1E7A8385008AB5A4 /* Assets.xcassets in Resources */,
 				6E19E0CC1E7A8385008AB5A4 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +186,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		023A7509828B5276305A134F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sourcery1/Pods-Sourcery1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E19E0D81E7A849B008AB5A4 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Sourcery/bin/sourcery\" \"${SRCROOT}/Sourcery1\" \"${SRCROOT}/Sourcery1/Templates\" \"${SRCROOT}/Sourcery1/CodeGenerated\" ";
+		};
+		833E7826B92153776DCFF8D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sourcery1/Pods-Sourcery1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F60EDA78A4B1903D8919D643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E19E0BF1E7A8385008AB5A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6E19E0C91E7A8385008AB5A4 /* ViewController.swift in Sources */,
+				6E19E0ED1E7A89F6008AB5A4 /* Enumcase.generated.swift in Sources */,
+				6E19E0DA1E7A8676008AB5A4 /* Enums.swift in Sources */,
 				6E19E0C71E7A8385008AB5A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +377,7 @@
 		};
 		6E19E0D61E7A8385008AB5A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244A56E8DE77E3DB4CE8C552 /* Pods-Sourcery1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y5ZCMSQNE7;
@@ -272,6 +391,7 @@
 		};
 		6E19E0D71E7A8385008AB5A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006CC951308D1A0AC4F988AD /* Pods-Sourcery1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y5ZCMSQNE7;
@@ -302,6 +422,7 @@
 				6E19E0D71E7A8385008AB5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
