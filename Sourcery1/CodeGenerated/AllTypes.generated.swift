@@ -25,6 +25,18 @@ static var methodList: String {
     }
 }
 
+extension OtherClass1 {
+static var methodList: String {
+        return ""
+    }
+}
+
+extension SomeClass1 {
+static var methodList: String {
+        return ""
+    }
+}
+
 extension Sweets {
 static var methodList: String {
         return ""
