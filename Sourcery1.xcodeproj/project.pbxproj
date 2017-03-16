@@ -22,6 +22,7 @@
 		6E19E0F81E7A8FA7008AB5A4 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0F71E7A8FA7008AB5A4 /* Classes.swift */; };
 		6E19E0FA1E7A9162008AB5A4 /* AutoHashable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0F91E7A9162008AB5A4 /* AutoHashable.stencil */; };
 		6E19E0FC1E7A918A008AB5A4 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E0FB1E7A918A008AB5A4 /* AutoHashable.generated.swift */; };
+		6E19E0FE1E7A932D008AB5A4 /* watchChanges.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E0FD1E7A932D008AB5A4 /* watchChanges.sh */; };
 		B5709B3087C17EE0F3A6DEFD /* libPods-Sourcery1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		6E19E0F71E7A8FA7008AB5A4 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		6E19E0F91E7A9162008AB5A4 /* AutoHashable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHashable.stencil; sourceTree = "<group>"; };
 		6E19E0FB1E7A918A008AB5A4 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
+		6E19E0FD1E7A932D008AB5A4 /* watchChanges.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = watchChanges.sh; sourceTree = SOURCE_ROOT; };
 		EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sourcery1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				6E19E0D21E7A8385008AB5A4 /* Info.plist */,
 				6E19E0D91E7A8676008AB5A4 /* Enums.swift */,
 				6E19E0F71E7A8FA7008AB5A4 /* Classes.swift */,
+				6E19E0FD1E7A932D008AB5A4 /* watchChanges.sh */,
 			);
 			path = Sourcery1;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				6E19E0D11E7A8385008AB5A4 /* LaunchScreen.storyboard in Resources */,
 				6E19E0EE1E7A89F6008AB5A4 /* Enumcase.stencil in Resources */,
 				6E19E0CE1E7A8385008AB5A4 /* Assets.xcassets in Resources */,
+				6E19E0FE1E7A932D008AB5A4 /* watchChanges.sh in Resources */,
 				6E19E0F01E7A8CE1008AB5A4 /* AllTypes.stencil in Resources */,
 				6E19E0CC1E7A8385008AB5A4 /* Main.storyboard in Resources */,
 			);
