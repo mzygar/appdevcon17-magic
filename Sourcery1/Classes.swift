@@ -12,13 +12,17 @@ import Foundation
 
 protocol AutoEquatable { }
 protocol AutoHashable { }
+// sourcery: useThat
+// sourcery: useThis
 class SomeClass1:AutoEquatable,AutoHashable {
+    // sourcery: useThisVariable
     var string = ""
     var x = 0
     var y = 5
 }
 
-
+// sourcery: useThis
+//nope
 class OtherClass1:AutoEquatable,AutoHashable {
     var anotherString = ""
     var x = 0
