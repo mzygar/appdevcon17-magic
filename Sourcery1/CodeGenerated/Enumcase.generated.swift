@@ -7,7 +7,13 @@ extension Animals {
 
 }
 
+extension Devices { 
+	static var count: Int { return 3 }
+
+}
+
 extension Sweets { 
 	static var count: Int { return 3 }
 
 }
+
