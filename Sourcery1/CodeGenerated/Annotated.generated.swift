@@ -1,9 +1,10 @@
-// Generated using Sourcery 0.5.8 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.6.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 
 
 extension OtherClass1 {
+//
 var variables : String  {
 return "" 
 + "anotherString : String"
@@ -14,6 +15,7 @@ return ""
 
 
 extension SomeClass1 {
+//lalal
 var variables : String  {
 return "" 
 + "string : String"

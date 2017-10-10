@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.5.8 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.6.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 
@@ -38,6 +38,12 @@ static var methodList: String {
 }
 
 extension SomeClass1 {
+static var methodList: String {
+        return ""
+    }
+}
+
+extension SomeVC {
 static var methodList: String {
         return ""
     }

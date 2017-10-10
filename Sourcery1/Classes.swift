@@ -7,13 +7,14 @@
 //
 
 import Foundation
-
+import UIKit
 
 
 protocol AutoEquatable { }
 protocol AutoHashable { }
-// sourcery: useThat
+protocol AutoMockable { }
 // sourcery: useThis
+// sourcery: nibName=lalal
 class SomeClass1:AutoEquatable,AutoHashable {
     // sourcery: useThisVariable
     var string = ""
@@ -23,8 +24,21 @@ class SomeClass1:AutoEquatable,AutoHashable {
 
 // sourcery: useThis
 //nope
-class OtherClass1:AutoEquatable,AutoHashable {
+class OtherClass1:AutoEquatable,AutoHashable,AutoMockable {
     var anotherString = ""
     var x = 0
     var y = 5
+}
+
+// sourcery: autospyable
+protocol SomeProtocol: AutoMockable {
+    var lala:String {get}
+    func someMethod()
+    func someMethod2(a:Int, b:String?)
+}
+
+
+class SomeVC:UIViewController {
+     @IBOutlet var theView:  UIView!
+    var notTheView:UIView!
 }

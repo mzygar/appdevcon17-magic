@@ -1,6 +1,7 @@
 {% for type in types.all|annotated:"useThis" %}
 
 extension {{ type.name }} {
+//{{type.annotations.nibName}}
 var variables : String  {
 return "" {% for variable in type.variables %}
 + "{{ variable.name }} : {{ variable.typeName }}"

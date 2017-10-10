@@ -24,7 +24,7 @@ enum Sweets {
 }
 
 enum Devices {
-    case Phone, Tablet, Laptop, Kindle
+    case Phone, Tablet, Laptop, Kindle, AndroIdShit
 }
 
 enum Barcode {

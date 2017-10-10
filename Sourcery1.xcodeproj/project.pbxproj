@@ -27,6 +27,8 @@
 		6E19E1021E7A99BF008AB5A4 /* AssociatedValues.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E1011E7A99BF008AB5A4 /* AssociatedValues.generated.swift */; };
 		6E19E1041E7A9B48008AB5A4 /* Annotated.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E19E1031E7A9B48008AB5A4 /* Annotated.stencil */; };
 		6E19E1061E7A9B58008AB5A4 /* Annotated.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19E1051E7A9B58008AB5A4 /* Annotated.generated.swift */; };
+		6E32E1111EC04C710019A4ED /* Autospyable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 6E32E1101EC04C710019A4ED /* Autospyable.stencil */; };
+		6E32E1131EC04DC80019A4ED /* Autospyable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32E1121EC04DC80019A4ED /* Autospyable.generated.swift */; };
 		B5709B3087C17EE0F3A6DEFD /* libPods-Sourcery1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		6E19E1011E7A99BF008AB5A4 /* AssociatedValues.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedValues.generated.swift; sourceTree = "<group>"; };
 		6E19E1031E7A9B48008AB5A4 /* Annotated.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Annotated.stencil; sourceTree = "<group>"; };
 		6E19E1051E7A9B58008AB5A4 /* Annotated.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotated.generated.swift; sourceTree = "<group>"; };
+		6E32E1101EC04C710019A4ED /* Autospyable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Autospyable.stencil; sourceTree = "<group>"; };
+		6E32E1121EC04DC80019A4ED /* Autospyable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autospyable.generated.swift; sourceTree = "<group>"; };
 		EBFA8B4DA80DB475B4019302 /* libPods-Sourcery1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sourcery1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 		6E19E0E91E7A89F6008AB5A4 /* CodeGenerated */ = {
 			isa = PBXGroup;
 			children = (
+				6E32E1121EC04DC80019A4ED /* Autospyable.generated.swift */,
 				6E19E1051E7A9B58008AB5A4 /* Annotated.generated.swift */,
 				6E19E1011E7A99BF008AB5A4 /* AssociatedValues.generated.swift */,
 				6E19E0FB1E7A918A008AB5A4 /* AutoHashable.generated.swift */,
@@ -136,6 +141,7 @@
 				6E19E0F91E7A9162008AB5A4 /* AutoHashable.stencil */,
 				6E19E0FF1E7A9924008AB5A4 /* AssociatedValues.stencil */,
 				6E19E1031E7A9B48008AB5A4 /* Annotated.stencil */,
+				6E32E1101EC04C710019A4ED /* Autospyable.stencil */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E32E1111EC04C710019A4ED /* Autospyable.stencil in Resources */,
 				6E19E0FA1E7A9162008AB5A4 /* AutoHashable.stencil in Resources */,
 				6E19E1001E7A9924008AB5A4 /* AssociatedValues.stencil in Resources */,
 				6E19E0F41E7A8EF6008AB5A4 /* AutoEquatable.stencil in Resources */,
@@ -285,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -299,6 +306,7 @@
 				6E19E1021E7A99BF008AB5A4 /* AssociatedValues.generated.swift in Sources */,
 				6E19E0F81E7A8FA7008AB5A4 /* Classes.swift in Sources */,
 				6E19E1061E7A9B58008AB5A4 /* Annotated.generated.swift in Sources */,
+				6E32E1131EC04DC80019A4ED /* Autospyable.generated.swift in Sources */,
 				6E19E0C91E7A8385008AB5A4 /* ViewController.swift in Sources */,
 				6E19E0ED1E7A89F6008AB5A4 /* Enumcase.generated.swift in Sources */,
 				6E19E0DA1E7A8676008AB5A4 /* Enums.swift in Sources */,
